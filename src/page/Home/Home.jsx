@@ -1,6 +1,7 @@
 import Card from "../../components/Card/Card";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
+import SmallCard from "../../components/SmallCard/SmallCard";
 import Top from "../../components/Top/Top";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
                 <Top/>
                 <Navbar/>
                 <Card/>
+                <SmallCard/>
             </div>
         </div>
     );
