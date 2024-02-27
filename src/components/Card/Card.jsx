@@ -15,7 +15,7 @@ const Card = () => {
                     <div key={card.id} className="bg-[#FFFFFF] text-[#2C384A] mb-10 px-3 pb-3 rounded-lg relative">
                         <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3">
                             <div className="text-center text-[#626E79]">
-                                <img src={card?.picture} className="w-52 rounded-lg pt-3" />
+                                <img src={card?.picture} className="w-52 flex mx-auto rounded-lg pt-3" />
                                 <p>{card?.builder}</p>
                             </div>
                             <div className="pt-3">
@@ -31,18 +31,20 @@ const Card = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="ml-36 ">
+                            <div className="">
                                 <div className="">
-                                    <div className="bg-[#F3F9FF] w-32 rounded-b-lg text-center">
-                                        <p>{card?.ratingNo}</p>
-                                        <p>{card?.result}</p>
-                                        {/* <Rating 
+                                    <div className="">
+                                        <div className="bg-[#F3F9FF] w-32 rounded-b-lg text-center">
+                                            <p>{card?.ratingNo}</p>
+                                            <p>{card?.result}</p>
+                                            {/* <Rating 
                                         style={{ maxWidth: 180 }}
                                         value={card.rating}
                                         //onChange={setRating}
                                     /> */}
+                                        </div>
                                     </div>
-                                    <button className=" mt-48 bg-[#1B88F4] text-white px-20 py-3 rounded-xl">View</button>
+                                    <button className="flex mx-auto mt-48 bg-[#1B88F4] text-white px-20 py-3 rounded-xl">View</button>
                                 </div>
                             </div>
                         </div>
