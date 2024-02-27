@@ -1,3 +1,4 @@
+import Card from "../../components/Card/Card";
 import Header from "../../components/Header/Header";
 import Navbar from "../../components/Navbar/Navbar";
 import Top from "../../components/Top/Top";
@@ -7,8 +8,9 @@ const Home = () => {
         <div>
             <Header></Header>
             <div className="bg-[#FBFCFD] mt-5">
-                <Top></Top>
-                <Navbar></Navbar>
+                <Top/>
+                <Navbar/>
+                <Card/>
             </div>
         </div>
     );
