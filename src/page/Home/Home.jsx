@@ -1,4 +1,5 @@
 import Header from "../../components/Header/Header";
+import Navbar from "../../components/Navbar/Navbar";
 import Top from "../../components/Top/Top";
 
 const Home = () => {
@@ -6,8 +7,9 @@ const Home = () => {
         <div>
             <Header></Header>
             <div className="bg-[#FBFCFD] mt-5">
-            <Top></Top>
-        </div>
+                <Top></Top>
+                <Navbar></Navbar>
+            </div>
         </div>
     );
 };
