@@ -9,7 +9,7 @@ import Top from "../../components/Top/Top";
 
 const Home = () => {
     return (
-        <div>
+        <div className="max-w-full">
             <Header></Header>
             <div className="bg-[#FBFCFD] mt-5">
                 <Top/>

@@ -1,6 +1,9 @@
-//import { Rating } from "@smastrom/react-rating";
+
 import { useEffect, useState } from "react";
 import { HiChevronDown } from "react-icons/hi2";
+import { AiOutlineStar } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
+import Rating from "react-rating";
 const Card = () => {
     const [cards, setCards] = useState([]);
     useEffect(() => {
@@ -34,7 +37,7 @@ const Card = () => {
                             <div className="">
                                 <div className=" ml-36">
                                     <div className="">
-                                        <div className="bg-[#F3F9FF]  w-36 rounded-b-lg text-center">
+                                        <div className="bg-[#F3F9FF]   rounded-b-lg text-center">
                                             <p>{card?.ratingNo}</p>
                                             <p>{card?.result}</p>
                                             {/* <Rating
@@ -43,17 +46,16 @@ const Card = () => {
                                                     //onChange={setRating}
                                                     readOnly
                                                 /> */}
-                                            {/* <div className="max-w-7xl mx-auto lg:px-36 px-20">
-                                                    {cards?.map((card, index) => (
-                                                                <div key={index} className="mt-2">
-                                                                    <Rating
-                                                                        style={{ maxWidth: 80 }}
-                                                                        value={card?.rating}
-                                                                        readOnly
-                                                                    />
-                                                                </div>
-                                                    ))}
-                                            </div> */}
+                                            <Rating
+                                                className="mb-1"
+                                                initialRating={card.rating}
+                                                emptySymbol={
+                                                    <AiOutlineStar className="text-orange-300 w-4 h-4" />
+                                                }
+                                                fullSymbol={
+                                                    <AiFillStar className="text-orange-300 w-4 h-4" />
+                                                }
+                                            ></Rating>
                                         </div>
                                     </div>
                                     <button className="flex mx-auto mt-48 bg-[#1B88F4] text-white px-20 py-3 rounded-xl">View</button>

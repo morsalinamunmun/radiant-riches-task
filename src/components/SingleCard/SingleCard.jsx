@@ -1,5 +1,6 @@
 import { IoMdCheckmark } from "react-icons/io";
-import { Rating } from "@smastrom/react-rating";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import Rating from "react-rating";
 // import { useState } from "react";
 const SingleCard = () => {
     // const [rating, setRating] = useState(3);
@@ -40,17 +41,17 @@ const SingleCard = () => {
                                 <div className="bg-[#F3F9FF] w-36 rounded-b-lg text-center">
                                     <p>9.1</p>
                                     <p>Very Good</p>
-                                    {/* <Rating 
-                                        style={{ maxWidth: 180 }}
-                                        value={rating}
-                                        onChange={setRating}
-                                    /> */}
+                                    <Rating
+                                                className="mb-1"
+                                                initialRating={5}
+                                                emptySymbol={
+                                                    <AiOutlineStar className="text-orange-300 w-4 h-4" />
+                                                }
+                                                fullSymbol={
+                                                    <AiFillStar className="text-orange-300 w-4 h-4" />
+                                                }
+                                            ></Rating>
                                     <div className="flex gap-1">
-                                        <Rating
-                                            style={{ maxWidth: 180 }}
-                                            value={4}
-                                            readOnly
-                                        />
                                     </div>
                                 </div>
                             </div>
